@@ -27,8 +27,8 @@ app.use(passport.session());
 require('./routes/authRoutes')(app);
 require('./routes/blogRoutes')(app);
 
-if (['production'].includes(process.env.NODE_ENV)) {
-  app.use(express.static('client/build'));
+if (['production', 'ci'].includes(process.env.NODE_ENV)) {
+  
 
   const path = require('path');
   app.get('*', (req, res) => {
