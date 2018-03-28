@@ -30,9 +30,8 @@ require('./routes/blogRoutes')(app);
 if (['production', 'ci'].includes(process.env.NODE_ENV)) {
   const path = require('path');
   app.use('/static', express.static(path.join(__dirname, 'client/build/static')))
-  app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'client/build/static/index.html')))
+  app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'client/build/index.html')))
 }
-
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
