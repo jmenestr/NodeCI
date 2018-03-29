@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js test
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js add
 
 PATH: 
   /Users/justin.menestrina/.yarn/bin:/Users/justin.menestrina/.opam/system/bin:/Users/justin.menestrina/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/usr/local/go/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/justin.menestrina/.yarn/bin:/Users/justin.menestrina/.opam/system/bin:/Users/justin.menestrina/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/.rvm/bin:/usr/local/smlnj/bin:/Users/justin.menestrina/.rvm/bin:/.rvm/bin:/Users/justin.menestrina/.cargo/bin:/usr/local/smlnj/bin:/Users/justin.menestrina/.rvm/bin
@@ -46,7 +46,7 @@ npm manifest:
       "passport": "^0.3.2",
       "passport-google-oauth20": "^1.0.0",
       "path-parser": "^2.0.2",
-      "puppeteer": "^1.0.0",
+      "puppeteer": "0.13.0",
       "redis": "^2.8.0",
       "uuid": "^3.2.1"
     }
@@ -3797,9 +3797,9 @@ Lockfile:
     version "2.1.0"
     resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.0.tgz#5f863edc89b96db09074bad7947bf09056ca4e7d"
   
-  puppeteer@^1.0.0:
-    version "1.2.0"
-    resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-1.2.0.tgz#6a8a1c618af073dfcf6fc7c7e3c12e54129ffa98"
+  puppeteer@0.13.0:
+    version "0.13.0"
+    resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-0.13.0.tgz#2e6956205f2c640964c2107f620ae1eef8bde8fd"
     dependencies:
       debug "^2.6.8"
       extract-zip "^1.6.5"
@@ -5043,16 +5043,14 @@ Lockfile:
       fd-slicer "~1.0.1"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: sh
-  Arguments: -c jest
-  Directory: /Users/justin.menestrina/projects/advancedNode/AdvancedNodeStarter
-  Output:
-  
-      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
-      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
-      at ChildProcess.emit (events.js:180:13)
-      at maybeClose (internal/child_process.js:936:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
+  Error: Missing list of packages to add to your project.
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:40587:13)
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:23451:28)
+      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:95:12)
+      at Object.run (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:40599:19)
+      at run (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:89113:20)
